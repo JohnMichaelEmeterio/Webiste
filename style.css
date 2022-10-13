@@ -1,0 +1,42 @@
+.logo {
+    width: 40px;
+    height: 40px;
+}
+div.polaroid {
+    max-width: 98%;
+    height: 460px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 10px;
+}
+
+div.container {
+    text-align: center;
+    padding: 10px 20px;
+}
+.img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 30%;
+}
+.text1 {
+    margin-top: 360px;
+}
+.img-hover-zoom {
+  height: px; /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform .5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.5);
+}
