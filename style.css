@@ -1,4 +1,6 @@
-.logo {
+
+.logo 
+{
     width: 40px;
     height: 40px;
 }
@@ -9,34 +11,134 @@ div.polaroid {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin: 10px;
 }
-
+div.profile {
+    max-width: 98%;
+    height: 1260px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 10px;
+} 
+div.box {
+    border: 4px solid gray;
+    height: 1240px;
+    width: 50%;
+    margin-left: -5%;
+}
 div.container {
     text-align: center;
     padding: 10px 20px;
 }
-.img {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 30%;
+img.img {
+   width: 30%;
+   height: 10%;
+   margin-top: 30px;  
 }
 .text1 {
-    margin-top: 360px;
+    margin-top: 30px;
 }
-.img-hover-zoom {
-  height: px; /* [1.1] Set it as per your need */
-  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+.about {
+    float: left;
+    margin-top: 90px;
+    margin-left: 60px;
+    font-size: 400%;
+}
+.content1 {
+    position: absolute;
+    text-align: start;
+    margin-top: 175px;
+    font-style: oblique;
+    font-size: 200%;
+    margin-left: 13.7em;
+}
+.education {
+    float: right;
+    margin-top: 2em;
+    margin-left: 5.5em;
+    font-size: 390%;
+}
+.content2 {
+    position: absolute;
+    text-align: start;
+    margin-top: 670px;
+    font-style: oblique;
+    font-size: 200%;
+    margin-left: 425px;
+}
+img.imgprofile {
+    float: left; 
+    width: 40%;
+    height: 100%;
+    margin-top: 40px;
+    margin-left: 0px;
 }
 
-/* [2] Transition property for smooth transformation of images */
-.img-hover-zoom img {
-  transition: transform .5s ease;
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) { 
+    .box {
+        border: 4px solid gray;
+        height: 1240px;
+        width: 140px;
+        margin-left: 15em;
+    }
+     img.img {
+       float: none;
+       width: 40%;
+       height: 10%;
+       padding-top: 1em;
+     }
+     .text1 {
+        margin-top: 1em;
+     }       
 }
 
-/* [3] Finally, transforming the image when container gets hovered */
-.img-hover-zoom:hover img {
-  transform: scale(1.5);
+
+
+
+
+@media only screen and (min-device-width: 320px) 
+                   and (max-device-width: 480px) 
+                   and (-webkit-min-device-pixel-ratio: 2) {
+    div.polaroid {
+       max-width: 98%;
+       height: 460px;
+    }
+    .about{
+       font-size: 20px;
+        margin-top: 60px;
+        margin-left: 30px;
+    }
+    .page1 {
+        position: absolute;
+        text-align: start;
+        margin-top: 90px;
+        font-size: 10px;
+        margin-left: 145px;
+    }
+    .box {
+        border: 4px solid gray;
+        height: 1240px;
+        width: 140px;
+        margin-left: -5px;
+    }
+    img.img {
+        float: none;
+        width:60%;
+        height: 10%;
+        padding-top: 2em;
+    }
+    .text1 {
+        margin-top: 1em;  
+    }
 }
+
